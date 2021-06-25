@@ -1,0 +1,23 @@
+# @name signup
+
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+   "email": "elbe995@gmail.com" ,
+   "name": "elber sousa", 
+   "password": "lasanhasz123",
+   "role": "ADMIN"
+}
+
+###
+
+# @name signup
+
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+   "email": "elbe995@gmail.com" ,
+   "password": "lasanhasz123"
+}
