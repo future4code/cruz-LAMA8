@@ -12,7 +12,7 @@ Content-Type: application/json
 
 ###
 
-# @name signup
+# @name login
 
 POST http://localhost:3003/user/login
 Content-Type: application/json
@@ -21,3 +21,23 @@ Content-Type: application/json
    "email": "elbe995@gmail.com" ,
    "password": "lasanhasz123"
 }
+
+###
+
+POST http://localhost:3003/band/create
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJhMTY1MGNiLTg3ZTUtNGYzZi1iZjE4LWIzMzk4NjgyM2ZhOCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTYyNDY2MDc3MywiZXhwIjoxNjI0NjYxMzczfQ.pet5-zTtK_rS0teboCweT1_rK5bkhETDLuVTgscscHI
+
+{
+   "name": "Forró escoliose" ,
+   "music_genre": "Forró",
+   "responsible": "cremosinho"
+}
+
+###
+
+GET http://localhost:3003/band/bandname?name=Forró escoliose
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJhMTY1MGNiLTg3ZTUtNGYzZi1iZjE4LWIzMzk4NjgyM2ZhOCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTYyNDY2MDc3MywiZXhwIjoxNjI0NjYxMzczfQ.pet5-zTtK_rS0teboCweT1_rK5bkhETDLuVTgscscHI
+
+
