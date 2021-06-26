@@ -1,6 +1,5 @@
 import { Request, Response } from 'express';
-import { UserInputDTO, LoginInputDTO, User, BandInputDTO } from '../model/User';
-import { UserBusiness } from '../business/UserBusiness';
+import { BandInputDTO } from '../model/Models';
 import { BaseDatabase } from '../data/BaseDatabase';
 import { BandBusiness } from '../business/BandBusiness';
 

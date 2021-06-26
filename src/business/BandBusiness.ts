@@ -1,4 +1,4 @@
-import { BandInputDTO, UserRole } from '../model/User';
+import { BandInputDTO, UserRole } from '../model/Models';
 import { IdGenerator } from '../services/IdGenerator';
 import { Authenticator } from '../services/Authenticator';
 import { BandDatabase } from '../data/BandDataBase';
@@ -13,7 +13,7 @@ export class BandBusiness {
     }
 
     if (resulttoken.role !== UserRole.ADMIN) {
-      throw new Error('You dont have permission to acess this');
+      throw new Error('You dont have permission to access this');
     }
 
     if (!band.name || !band.music_genre || !band.responsible) {
