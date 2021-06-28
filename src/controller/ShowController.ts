@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { ShowInputDTO } from '../model/Models';
+import {searchDTO, show, ShowInputDTO, weekDay} from '../model/Models';
 import { BaseDatabase } from '../data/BaseDatabase';
 import { ShowBusiness } from '../business/ShowBusiness';
 

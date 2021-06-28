@@ -1,0 +1,56 @@
+POST http://localhost:3003/band/create
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhOTM2MDkyLTJmMmItNGFiOS04YjdhLWQ0ZjAxNzkwMmVkMiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTYyNDczMzEzMCwiZXhwIjoxNjI0NzM2NzMwfQ._4fLBTf3OS4LlCX4qHFLu3Wqfnd_IiO7TNhJQUbz15A
+
+{
+  "name": "Bananinhas",
+  "music_genre": "Forró",
+  "responsible": "Banana"
+}
+
+###
+GET http://localhost:3003/band/bandname=Bananinhas
+Content-Type: application/json
+
+###
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+  "email": "banana@labenu.com",
+  "name": "Banana",
+  "password": "password",
+  "role": "NORMAL"
+}
+
+###
+###
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+  "email": "banana@labenu.com",
+  "password": "password"
+}
+
+###
+
+AToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhOTM2MDkyLTJmMmItNGFiOS04YjdhLWQ0ZjAxNzkwMmVkMiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTYyNDc0NjIyNSwiZXhwIjoxNjI0NzQ5ODI1fQ.9UClqOa7cvC1l1gwSB2MeAcBmAL3WPIlnIsrfcQGk1c
+NToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNjNDg3NzM1LTk3NDAtNGVjZi1iMDYzLTUxYzIxY2M5MWRkZSIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2MjQ3MzMyNDksImV4cCI6MTYyNDczNjg0OX0.yxEv74XWA-WgZ7eWSf0j7v-s_VngZPV_EiIMmibJn-w
+
+###
+
+POST http://localhost:3003/show/create
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhOTM2MDkyLTJmMmItNGFiOS04YjdhLWQ0ZjAxNzkwMmVkMiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTYyNDc0NjIyNSwiZXhwIjoxNjI0NzQ5ODI1fQ.9UClqOa7cvC1l1gwSB2MeAcBmAL3WPIlnIsrfcQGk1c
+
+{
+  "weekDay": "SABADO",
+  "startTime": 15,
+  "endTime": 18,
+  "bandId": "e6a8720a-a4a8-491c-8b47-89b713d70012"
+}
+
+###
+GET http://localhost:3003/show/bandname?name=Bananinhas
+Content-Type: application/json
