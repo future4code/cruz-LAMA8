@@ -1,0 +1,65 @@
+# @name signup
+
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+  "email": "elbe995@gmail.com",
+  "name": "elber sousa",
+  "password": "lasanhasz123",
+  "role": "ADMIN"
+}
+
+###
+
+# @name login
+
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+  "email": "elbe995@gmail.com",
+  "password": "lasanhasz123"
+}
+
+###
+
+POST http://localhost:3003/band/create
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJhMTY1MGNiLTg3ZTUtNGYzZi1iZjE4LWIzMzk4NjgyM2ZhOCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTYyNDY2MDc3MywiZXhwIjoxNjI0NjYxMzczfQ.pet5-zTtK_rS0teboCweT1_rK5bkhETDLuVTgscscHI
+
+{
+  "name": "Forró escoliose",
+  "music_genre": "Forró",
+  "responsible": "cremosinho"
+}
+
+###
+
+GET http://localhost:3003/band/bandname?name=Forró escoliose
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJhMTY1MGNiLTg3ZTUtNGYzZi1iZjE4LWIzMzk4NjgyM2ZhOCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTYyNDY2MDc3MywiZXhwIjoxNjI0NjYxMzczfQ.pet5-zTtK_rS0teboCweT1_rK5bkhETDLuVTgscscHI
+
+
+###
+
+POST http://localhost:3003/show/create
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJhMTY1MGNiLTg3ZTUtNGYzZi1iZjE4LWIzMzk4NjgyM2ZhOCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTYyNDY3Mjc5MCwiZXhwIjoxNjI0NjczMzkwfQ.tdLobOmKTIc9CZixd9wR8-JL-q4b3GIX36sGO_5u4Jw
+
+{
+  "weekDay": "sábado",
+  "startTime": 5,
+  "endTime": 13,
+  "bandId": "c9071e87-0b2e-4eab-89ae-4656c87208f8"
+}
+
+###
+
+GET http://localhost:3003/show/bandname
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJhMTY1MGNiLTg3ZTUtNGYzZi1iZjE4LWIzMzk4NjgyM2ZhOCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTYyNDY3MjA5NCwiZXhwIjoxNjI0NjcyNjk0fQ.oO2yma-1UWwvEUOIwj6An_6Srs-h0uC_SKtE2ou5d04
+
+{
+  "data": "sábado"
+}
